@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'american-scribe';
+    src: url('assets/fonts/american-scribe.ttf') format('truetype');
+}
+
+
+html {
+    margin: 0;
+    background-color: #FCF8ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Open-Sans', sans-serif;
+    color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "american-scribe", sans-serif;
+}
+
+.logo__container {
+    margin-top: 12px;
+}
+
+.preview__image-container {
+    display: block;
+    max-width: 406px;
+    aspect-ratio: 406/580;
+}
+
+.line {
+    width: 100%;
+    height: 1px; 
+    background-color: #E9B01D;
+}
+
+.image__escudo {
+    aspect-ratio: 76/125;
+}
+
+.cuerpo-pacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "american-scribe", sans-serif;
+}
+
+.cuerpo__fondo-logo {
+    background-image: url('assets/images/Escudo_fondo_pacto.svg'); /* Ruta de la imagen */
+    background-size: contain; /* Ajusta la imagen para que cubra todo el div */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+}
+
+.firma-image {
+    aspect-ratio: 310/170;
+}
+
+@media (480px <= width <= 860px )  {
+   .preview__image-container {
+    max-width: 250px;
+   }
+}
+
+@media ( width<= 480px ) {
+    .preview__image-container {
+        display: none;
+    }
+}
