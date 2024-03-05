@@ -44,6 +44,7 @@ h1 {
 }
 
 .image__escudo {
+    min-width: 76px;
     aspect-ratio: 76/125;
 }
 
